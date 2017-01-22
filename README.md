@@ -32,4 +32,4 @@ You can quickly test the connection to your remote server using a simple ssh com
 
     ssh -D 1234 -p 443 -N user@*your server url*
 
-If it works it's a win. You can now setup the SOCKS proxy the exact same way you did previously. You can now, finally, do you work.
+If it works it's a win. Just setup the SOCKS proxy and your browser the exact same way you did yesterday. You can now, finally, do you work.

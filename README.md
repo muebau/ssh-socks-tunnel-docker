@@ -30,6 +30,6 @@ Time to setup and test corkscrew. Here is an example configuration to add to you
     
 You can quickly test the connection to your remote server using a simple ssh command:
 
-    ssh -D 1234 -p 443 -N user@*your server url*
+    ssh -p 443 user@*your server url*
 
 If it works it's a win. Just setup the SOCKS proxy and your browser the exact same way you did yesterday. You can now, finally, do you work.

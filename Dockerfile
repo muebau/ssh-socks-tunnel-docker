@@ -1,5 +1,5 @@
 
-FROM alpine:3.10
+FROM alpine:latest
 
 RUN apk add --no-cache openssh; \
     adduser -D user; mkdir /home/user/.ssh; chown user:user /home/user/.ssh; chmod 0700 /home/user/.ssh; \

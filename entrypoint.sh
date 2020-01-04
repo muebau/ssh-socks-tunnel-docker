@@ -10,11 +10,11 @@ fi
 
 if [ ! -f /home/user/.ssh/password ]; then
     dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | head -c 32 > /home/user/.ssh/password 
-    PASSWORD=$(cat /home/user/.ssh/password)
-    echo "user:$PASSWORD" | chpasswd
-
-    echo "Set password for 'user': $PASSWORD"
 fi
+
+PASSWORD=$(cat /home/user/.ssh/password)
+echo "user:$PASSWORD" | chpasswd
+echo "Set password for 'user': $PASSWORD"
 
 chown user:user -R /home/user/.ssh/
 chmod g-w /home/user

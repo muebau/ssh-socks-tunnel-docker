@@ -13,9 +13,6 @@ if [ ! -f /etc/ssh/ssh_host_rsa_key ]; then
     echo "$USER_SSH_ALLOWED" > /home/user/.ssh/authorized_keys
 fi
 
-echo "" >> /etc/ssh/sshd_config
-echo "GatewayPorts yes" >> /etc/ssh/sshd_config
-
 chown user:user -R /home/user/.ssh/
 chmod g-w /home/user
 chmod 700 /home/user/.ssh

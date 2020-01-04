@@ -6,7 +6,7 @@ RUN apk add --no-cache openssh; \
     touch /home/user/.ssh/authorized_keys; chown user:user /home/user/.ssh/authorized_keys
     
 ADD entrypoint.sh /entrypoint.sh
-ADD sshd_config /etc/ssh/sshd_config
+ADD sshd_config /sshd_config
     
 EXPOSE 22
 CMD    ["sh", "/entrypoint.sh"]
